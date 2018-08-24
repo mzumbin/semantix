@@ -32,7 +32,7 @@
 5. GroupByKey​ ​​é​ ​menos​ ​eficiente​ ​que​ ​​reduceByKey​ ​​em​ ​grandes​ ​dataset.​ ​Por​ ​quê?
     ​​
     
-    reduceByKey​ pode começar a agrupar e reudir numa mesma maquina ou worker resultando em menor troca de dados entre os estágios
+    reduceByKey​ pode começar a agrupar e reduzir numa mesma maquina ou worker resultando em menor troca de dados entre os estágios
  6. Explique o código Scala?
     é o hello word do spark, Count Words  
      
