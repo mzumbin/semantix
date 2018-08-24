@@ -1,12 +1,8 @@
 package semantixtest
 
-import java.text.SimpleDateFormat
-import java.time.{LocalDateTime, ZoneId}
 
-import org.apache.spark.sql.SQLContext._
-import org.apache.spark.sql.functions._
-import org.apache.spark.sql.{Dataset, SparkSession}
-import org.apache.spark.sql.types._
+import org.apache.spark.sql.{ SparkSession}
+
 object SemantixTest {
 
   def main(args: Array[String]) = {
@@ -34,15 +30,8 @@ object SemantixTest {
   }
 }
 
-object ParseDate{
-  private  val formater = new SimpleDateFormat("dd/MMM/YYYY:HH:mm:ss ZZZZ")
-  def parseDate(dateString:String): LocalDateTime ={
-    val instant = formater.parse(dateString).toInstant
-    LocalDateTime.ofInstant(instant, ZoneId.systemDefault)
-  }
-  def getYearDateMonthString(date:String): String = date.substring(0,11)
-}
-case class NasaRequestLog(host:String, timestamp:String, request:String, httpResponse:Int, bytes:Int)
+
+
 
 
 
