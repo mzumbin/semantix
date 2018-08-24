@@ -1,3 +1,6 @@
+
+#### Para rodar os testes`sbt test`
+#### Para rodar a aplicação `sbt run nome do arquivo`
 1. Qual​ ​o​ ​objetivo​ ​do​ ​comando​ ​​cache​ ​​em​ ​Spark?
 
     Cache  é uma optimizacao para o reuso de Spark de computaçoes em estagios subb sequentes.  
