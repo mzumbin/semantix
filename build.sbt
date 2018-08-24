@@ -1,5 +1,5 @@
 
-lazy val main = "com.mailinvitation.app.QuickStartServerApp"
+lazy val main = "semantixtest.SemantixTest"
 lazy val root = (project in file(".")).
   settings(
     inThisBuild(List(
