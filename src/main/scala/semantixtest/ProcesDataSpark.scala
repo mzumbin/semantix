@@ -45,8 +45,8 @@ class ProcesDataSpark(spark: SparkSession,dataPath:String) {
 
   def erroResponsePerDay(): Array[ (String, Int)] ={
       respondesWithError.map(data => getYearDateMonthString(data.timestamp))
-      .groupByKey(v=>v)
-      .mapValues( v=> (v,1))
+      .groupByKey(date=>date)
+      .mapValues( date=> (date,1))
       .reduceGroups((a,b)=>(a._1,a._2+b._2))
       .map(_._2)
       .collect()
