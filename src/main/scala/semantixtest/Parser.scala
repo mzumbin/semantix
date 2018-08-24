@@ -8,7 +8,8 @@ object Parser {
     line match {
       case withByte(host, timestamp, request, http, bytes) => NasaRequestLog(host, timestamp, request, http.toInt, bytes.toInt)
       case noByte(host, timestamp, request, http) => NasaRequestLog(host, timestamp, request, http.toInt, 0)
-      case _ => throw new Exception("error parsing data")
+      case _ => null
+        //throw new Exception(s"error parsing data:$line")
     }
   }
 }

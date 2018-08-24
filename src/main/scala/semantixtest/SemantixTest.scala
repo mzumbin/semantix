@@ -11,7 +11,7 @@ object SemantixTest {
 
   def main(args: Array[String]) = {
     println("Test Started")
-    val spark: SparkSession = SparkSession.builder.appName("Sematix Test")
+    val spark: SparkSession = SparkSession.builder.appName("Semantix Test")
       .config("spark.master", "local")
       .getOrCreate()
 
@@ -29,7 +29,8 @@ object SemantixTest {
 
     val totalOfBytes = procesDataSpark.totalOfBytesTrasmited()
 
-    print(s"total of bytes transmited: $totalOfBytes")
+    println(s"total of bytes transmited: $totalOfBytes")
+    spark.stop()
   }
 }
 

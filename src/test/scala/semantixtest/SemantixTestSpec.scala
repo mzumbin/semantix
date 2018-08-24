@@ -33,12 +33,12 @@ class Tests extends FunSuite with BeforeAndAfterEach with Matchers {
     result should contain theSameElementsAs( List(("199.117.206.10",4),( "199.117.206.33",2)))
   }
 
-  test("ProcesDataSpark should calc the numer of error returned per day"){
+  test("ProcesDataSpark should calc the number of error returned per day"){
     val result = procesDataSpark.erroResponsePerDay()
     result should contain theSameElementsAs(List(("31/Aug/1995",1), ("30/Aug/1995",4), ("29/Aug/1995",1)))
   }
 
-  test("5"){
+  test("ProcesDataSpark should calc the total number of bytes transmitted"){
     val result = procesDataSpark.totalOfBytesTrasmited()
     result should be (93262)
   }
