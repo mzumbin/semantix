@@ -16,7 +16,7 @@ object SemantixTest {
       .getOrCreate()
 
     val path = args(0)
-    val procesDataSpark = new ProcesDataSpark(procesDataSpark,path)
+    val procesDataSpark = new ProcesDataSpark(spark,path)
     val totalRequestswithError: Long = procesDataSpark.totalRequestswithError()
     println(s" total Requests with Error:$totalRequestswithError")
 
