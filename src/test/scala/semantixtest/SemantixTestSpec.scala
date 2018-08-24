@@ -1,4 +1,4 @@
-package example
+package semantixtest
 
 import org.apache.spark.sql.SparkSession
 import org.scalatest._

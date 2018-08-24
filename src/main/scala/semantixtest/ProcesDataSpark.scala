@@ -1,6 +1,6 @@
-package example
+package semantixtest
 
-import example.ParseDate.getYearDateMonthString
+import semantixtest.ParseDate.getYearDateMonthString
 import org.apache.spark.sql.{Dataset, SparkSession}
 import org.apache.spark.sql.functions.desc
 

@@ -1,4 +1,4 @@
-package example
+package semantixtest
 
 object Parser {
   val withByte = """^([^\s]+) - - \[([^\[\]]+)\] "([^"]+)" (\d+) (\d+)$""".r
